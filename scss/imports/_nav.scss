@@ -4,7 +4,7 @@ nav {
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
 
   @media (min-width: $break-two) {
@@ -27,8 +27,11 @@ nav {
     color: #fff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     border-radius: 6px;
-    min-width: 120px;
+    min-width: 90px;
     display: inline-block;
+    @media (min-width: $break-two) {
+      min-width: 120px;
+    }
   }
   .nav-storeit a {
     background: linear-gradient(to bottom, #fcde41 1%, #dfa910 100%);
